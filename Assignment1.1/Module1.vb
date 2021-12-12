@@ -17,6 +17,7 @@
             cmpchar = Mid(inpstr, count, 1)
             If InStr(str1, LCase(cmpchar)) = 0 Then
                 Notfound = True
+                Exit For
             Else
                 Notfound = False
             End If
